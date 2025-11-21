@@ -44,3 +44,19 @@ fun TampilData(
                 title = {Text(stringResource(id = R.string.Tampil), color = Color.White)},
                 colors = TopAppBarDefaults.mediumTopAppBarColors(colorResource(R.color.teal_200))
             )
+        }){ isiRuang->
+        Column(modifier = Modifier.padding(isiRuang),
+            verticalArrangement = Arrangement.SpaceBetween) {
+            Column(modifier = Modifier.padding(dimensionResource(R.dimen.padding_medium))) {
+                items.forEach { item ->
+                    Column {
+                        Text(text = item.first.uppercase(), fontSize = 18.sp)
+                        Text(
+                            text = item.second,
+                            fontWeight = FontWeight.Bold,
+                            fontFamily = FontFamily.Cursive,
+                            fontSize = 22.sp
+                        )
+                    }
+                    HorizontalDivider(thickness = 1.dp, color = Color.Cyan)
+                }
