@@ -38,3 +38,9 @@ fun TampilData(
         Pair(stringResource(R.string.gender), StatusUISiswa.gender),
         Pair(stringResource(R.string.alamat), StatusUISiswa.alamat)
     )
+    Scaffold(modifier = Modifier,
+        {
+            TopAppBar(
+                title = {Text(stringResource(id = R.string.Tampil), color = Color.White)},
+                colors = TopAppBarDefaults.mediumTopAppBarColors(colorResource(R.color.teal_200))
+            )
