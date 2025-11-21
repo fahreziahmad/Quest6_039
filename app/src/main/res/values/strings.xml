@@ -5,3 +5,11 @@
     <string name="nama_lengkap">NAMA LENGKAP</string>
     <string name="jenis_kelamin">JENIS KELAMIN</string>
     <string name="alamat">ALAMAT</string>
+    <string name="Tampil">Tampilan Data</string>
+    <string name="home">Form Isian</string>
+    <string name="laki">laki laki</string>
+    <string name="wanita">wanita</string>
+    <string name="nama">nama</string>
+    <string name="gender">gender</string>
+
+</resources>
